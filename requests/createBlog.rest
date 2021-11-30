@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/blogs 
+content-type: application/json
+
+{
+    "title": "Harjulan taistelu", 
+    "author": "Heimo Huima", 
+    "url": "www.ankronikka.fi"
+}

@@ -1,5 +1,6 @@
 POST http://localhost:3001/api/blogs 
 content-type: application/json
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im55dC5tZW5lZUBsYXBpLmNvbSIsImlkIjozLCJpYXQiOjE2Mzg4NjgwMDR9.jb3zF87CwvLSw_QjNOiI3cVbT7_eSV0CcjAqX_MkRjo
 
 {
     "title": "Harjulan taistelu", 

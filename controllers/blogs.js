@@ -5,7 +5,12 @@ const { SECRET } = require('../util/config')
 const { Blog, User } = require('../models')
 
 router.get('/', async (req, res) => {
-  const blogs = await Blog.findAll()  
+  const blogs = await Blog.findAll({
+    attributes: { exclude: ['userId'] },    
+    include: {      
+      model: User,      
+      attributes: ['name']    }
+  })  
   res.json(blogs)
 })
 
@@ -35,10 +40,11 @@ router.post('/', tokenExtractor, async (req, res, next) => {
   }
 })
   
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', tokenExtractor, async (req, res) => {
   const blog = await Blog.findByPk(req.params.id)
+  const user = await User.findByPk(req.decodedToken.id)
     
-  if (blog) {
+  if (blog && blog.userId === user.id) {
     blog.destroy()
     res.status(204).end()
   } else {

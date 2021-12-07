@@ -1,9 +1,9 @@
 POST http://localhost:3001/api/blogs 
 content-type: application/json
-authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im55dC5tZW5lZUBsYXBpLmNvbSIsImlkIjozLCJpYXQiOjE2Mzg4NjgwMDR9.jb3zF87CwvLSw_QjNOiI3cVbT7_eSV0CcjAqX_MkRjo
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNraWRzay5za29kc2tAZ21haWwuY29tIiwiaWQiOjIsImlhdCI6MTYzODg3NjkyOH0.LQ3RAqXzdyUXhF80KO0mAPk3UCSRHt9mJN9PQFDPYx0
 
 {
-    "title": "Harjulan taistelu", 
+    "title": "Harjulan taistelu V", 
     "author": "Heimo Huima", 
     "url": "www.ankronikka.fi"
 }

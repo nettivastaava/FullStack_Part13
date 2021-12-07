@@ -1,6 +1,6 @@
-PUT http://localhost:3001/api/users/Uuno
+PUT http://localhost:3001/api/users/noncompetent
 content-type: application/json
 
 {
-    "username": "Vigu"
+    "username": "skidsk.skodsk@gmail.com"
 }

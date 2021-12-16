@@ -3,7 +3,6 @@ const { Model, DataTypes } = require('sequelize')
 const { sequelize } = require('../util/db')
 
 class Readinglist extends Model {}
-
 Readinglist.init({
   id: {
     type: DataTypes.INTEGER,
@@ -22,7 +21,7 @@ Readinglist.init({
   },
   read: {
     type: DataTypes.BOOLEAN,
-    default: false
+    defaultValue: false
   }
 }, {
   sequelize,

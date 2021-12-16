@@ -1,9 +1,10 @@
 POST http://localhost:3001/api/blogs 
 content-type: application/json
-authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNraWRzay5za29kc2tAZ21haWwuY29tIiwiaWQiOjIsImlhdCI6MTYzODg4NzMwNH0.Pl5sOe4eiElPT7ik3Ib9bt6rDNrVayk0MfDWCG0PpIg
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InYuYWxpZEBnbWFpbC5jb20iLCJpZCI6MSwiaWF0IjoxNjM5NDg0MDE4fQ.TEZl4D2onYF7MYqAQ2h6UvCUrZAJhfhSojcpfDvf5Tg
 
 {
-    "title": "ploki", 
-    "author": "Dr. Reactive", 
-    "url": "www.netti.fi"
+    "title": "Harjulan taistelu II", 
+    "author": "Heimo Huima", 
+    "url": "www.netti.fi",
+    "year": 2021
 }

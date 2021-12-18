@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const { Blog, User, Readinglist } = require('../models')
+const { Blog, User, Readinglist, Session } = require('../models')
 const { tokenExtractor } = require('../util/middleware')
 
 router.post('/', async (req, res) => {
@@ -39,6 +39,24 @@ router.put('/:id', tokenExtractor, async (req, res, next) => {
       }
     }]
   })
+  const auth = req.get("authorization").substring(7)
+
+  const session = await Session.findOne({
+    where: {
+      userId: user.id,
+      token: auth
+    }
+  })
+  
+  if (user.disabled === true) {
+    return response.status(401).json({
+      error: 'account disabled. please, contact admin.'
+    })
+  } else if (!session) {
+    return response.status(401).json({
+      error: 'session has expired. please login again.'
+    })
+  }
   
   const blogList = user.readBooks.find(blog => blog.id === readingList.blogId)
 

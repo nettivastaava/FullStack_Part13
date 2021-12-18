@@ -1,10 +1,10 @@
 POST http://localhost:3001/api/blogs 
 content-type: application/json
-authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InYuYWxpZEBnbWFpbC5jb20iLCJpZCI6MSwiaWF0IjoxNjM5NDg0MDE4fQ.TEZl4D2onYF7MYqAQ2h6UvCUrZAJhfhSojcpfDvf5Tg
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hc2FAaG90bWFpbC5jb20iLCJpZCI6MSwiaWF0IjoxNjM5ODU4MTExfQ._gEnvZ1xf68vqBXBcYA1ktV92jpunLvnIyc2XVuH6yc
 
 {
-    "title": "Harjulan taistelu II", 
+    "title": "Harjulan taistelu", 
     "author": "Heimo Huima", 
-    "url": "www.netti.fi",
-    "year": 2021
+    "url": "www.netti.net",
+    "year": 2002
 }
